@@ -2,20 +2,11 @@
     .link-btn .style-btn:first-child {
         margin-right: 20px;
     }
+    #sobre .link-btn .style-btn:nth-child(2) {
+        margin-right: 20px;
+    }
 }
 @media (max-width: 769px) {
-    .link:nth-child(1) {
-        color: #16B6E9;
-    }
-    .link:nth-child(2) {
-        color: #960D67;
-    }
-    .link:nth-child(3) {
-        color: #F08508;
-    }
-    .link:nth-child(4) {
-        color: #4e4e4e;
-    }
     #main h1 {
         font-size: 130px;
         line-height: 103px;
@@ -33,6 +24,16 @@
     .circle:nth-of-type(3) {
         right: -10%;
     } 
+    .filter-btn {
+        flex-direction: column;
+        align-items: center;
+    }
+    .filter-btn .style-btn:nth-of-type(2) {
+        margin: 20px 0 10px 0;
+    }
+    .filter-btn .style-btn:nth-of-type(3) {
+        margin: 10px 0 20px 0;
+    }
 }
 
 @media (max-width: 577px) {
@@ -53,14 +54,17 @@
         font-size: 18px;
         margin-top: 40px;
     }
-    .filter-btn {
+    #sobre .link-btn {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 40px;
+        margin-top: 50px;
     }
-    .filter-btn .style-btn:nth-last-of-type(2) {
-        margin: 40px 0;
+    #sobre .link-btn .style-btn:nth-child(1){
+        margin-left: 20px;
+    }
+    #sobre .link-btn .style-btn:nth-child(2){
+        margin: 30px 0;
     }
 }
 
@@ -112,11 +116,10 @@
         margin: 20px auto 0;
         max-width: auto;
     }
-    .filter-btn {
-        margin-top: 15px;
+    input {
+        width: 260px;
     }
-    .filter-btn .style-btn:nth-last-of-type(2) {
-        margin: 15px 0;
-    }
-    
+    textarea {
+        width: 260px;
+     }
 }
