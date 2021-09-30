@@ -1,0 +1,122 @@
+@media (max-width: 992px) {
+    .link-btn .style-btn:first-child {
+        margin-right: 20px;
+    }
+}
+@media (max-width: 769px) {
+    .link:nth-child(1) {
+        color: #16B6E9;
+    }
+    .link:nth-child(2) {
+        color: #960D67;
+    }
+    .link:nth-child(3) {
+        color: #F08508;
+    }
+    .link:nth-child(4) {
+        color: #4e4e4e;
+    }
+    #main h1 {
+        font-size: 130px;
+        line-height: 103px;
+    }
+    .circle{
+        width: 180px;
+        height: 180px;
+    }
+    .circle:nth-of-type(1) {
+        right: -6%;
+    }
+    .circle:nth-of-type(2) {
+        right: 6%;
+    }
+    .circle:nth-of-type(3) {
+        right: -10%;
+    } 
+}
+
+@media (max-width: 577px) {
+    .link {
+        font-size: 13px;
+    }
+    .invisible-board {
+        height: 455px;
+    }
+    .menu {
+        line-height: 115px;
+    }
+    #main h1 {
+        font-size: 110px;
+        line-height: 90px;
+    }
+    p {
+        font-size: 18px;
+        margin-top: 40px;
+    }
+    .filter-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .filter-btn .style-btn:nth-last-of-type(2) {
+        margin: 40px 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .logo {
+        font-size: 25px;
+    }
+    #main h1 {
+        font-size: 70px;
+        line-height: 55px;
+        margin-top: 120px;
+    }
+    p {
+        font-size: 16px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .circle{
+        width: 130px;
+        height: 130px;
+    }
+    .circle:nth-of-type(1) {
+        top: 12%;
+        right: -15%;
+    }
+    .circle:nth-of-type(2) {
+        right: -3%;
+    }
+    .circle:nth-of-type(3) {
+        top: 21%;
+        right: -17%;
+    }
+    .button {
+        width: 140px;
+        height: 48px;
+        font-size: 11px;
+    }
+    .stroke {
+        width: 140px;
+        height: 48px;
+    }
+    .button, .stroke{
+        margin-top: 20px;
+    }
+    .button:hover {
+        transform: translate(12px, 12px);
+    }
+    #portfolio p {
+        margin: 20px auto 0;
+        max-width: auto;
+    }
+    .filter-btn {
+        margin-top: 15px;
+    }
+    .filter-btn .style-btn:nth-last-of-type(2) {
+        margin: 15px 0;
+    }
+    
+}

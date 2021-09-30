@@ -1,0 +1,322 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nunito:wght@300;700&display=swap');
+
+/* Varibles */
+:root {
+
+    /* Font */
+    --lg-font: 'Abril Fatface', cursive;
+    --sm-font: 'Nunito', sans-serif;
+
+    /* Colors */
+    --bg-color: #EBEBEB;
+    --white: #fff;
+    --black: #000;
+    --blue: #16B6E9;
+    --orange: #F08508;
+    --purple: #960D67;
+    /* Flexbox */
+}
+
+/* Initial Settings */
+body {
+    background-color: var(--bg-color);
+}
+
+a {
+    text-decoration: none;
+    font-family: var(--sm-font);
+    font-weight:bold;
+    text-transform: uppercase;
+    color: var(--black);
+    letter-spacing: 1px;
+}
+
+h1, p {
+    margin: 0;
+}
+
+/* NAVBAR */
+.navbar {
+    position: relative;
+    padding-top: 20px;
+}
+.logo {
+    font-family: var(--lg-font);
+    font-size: 30px;
+    color: var(--black);
+}
+.menu, .invisible-board {
+    width: 100%;
+    top: 100%;
+    right: 100%;
+    opacity: 0;
+    position: absolute;
+}
+.invisible-board {
+    height: 500px;
+    background-color: var(--bg-color);
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.6);
+}
+.menu {
+    text-align: center;
+    padding: 0;
+    line-height: 125px;
+}
+.link:nth-child(1):hover {
+    color: #16B6E9;
+}
+.link:nth-child(2):hover {
+    color: #960D67;
+}
+.link:nth-child(3):hover {
+    color: #F08508;
+}
+.link:nth-child(4):hover {
+    color: #969696;
+}
+.link:hover {
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+.link {
+    transition: all 0.7s ease;
+}
+.list:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Hamb Menu Style */
+.hamb-menu {
+    cursor: pointer;
+}
+.line {
+    background-color: var(--black);
+    height: 2px;
+}
+.line:nth-child(1) {
+    width: 10px;
+}
+.line:nth-child(2) {
+    width: 30px;
+    margin: 9px 0;
+}
+.line:nth-child(3) {
+    width: 20px;
+    margin-left: auto;
+}
+
+/* Hamb Menu ANimation */
+.hamb-menu.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(7.5px, 0px);
+}
+.hamb-menu.active .line:nth-child(2) {
+    transform: rotate(-45deg) translate(0px, 0px);
+}
+.hamb-menu.active .line:nth-child(3) {
+    transform: rotate(45deg) translate(-6px, -5px);
+}
+.hamb-menu.active .line, .line{
+    transition: all 0.7s ease;
+}
+.menu.is-active {
+    right: 0;
+    opacity: 1;
+}
+.invisible-board.activated {
+    right: 0;
+    opacity: 0.7;
+}
+.menu.is-active, .invisible-board.activated,
+.menu, .invisible-board {
+    transition: all 0.5s ease;
+    z-index: 2;
+}
+/* END NAVBAR */
+
+/* MAIN */
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#main h1 {
+    font-family: var(--lg-font);
+    font-size: 150px;
+    line-height: 118px;
+    text-align: end;
+    margin-top: 100px;
+    text-shadow: 6px 12px 10px rgba(0, 0, 0, 0.3);
+}
+.circle{
+    /*position: absolute;*/
+    position: fixed;
+    z-index: 0;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    filter: blur(50px);
+    opacity: 0.8;
+}
+.circle:nth-of-type(1) {
+    background-color: var(--blue);
+    top: 8%;
+    right: 19%;
+    z-index: -2;
+    animation: myEffects1 400ms ease-out 0.1s infinite alternate none;
+}
+.circle:nth-of-type(2) {
+    background-color: var(--purple);
+    top: 20%;
+    right: 26%;
+    z-index: -3;
+    animation: myEffects2 700ms ease-out 0.1s infinite alternate none;
+}
+.circle:nth-of-type(3) {
+    background-color: var(--orange);
+    top: 25%;
+    right: 17%;
+    z-index: -1;
+    animation: myEffects3 600ms ease 0.1s infinite alternate none;
+}
+
+@keyframes myEffects1 {
+    to {
+        transform: scale(1.2);
+        filter: blur(25px);
+    }
+}
+@keyframes myEffects2 {
+    to {
+        transform: translate(-40px, 20px) scale(1.1);
+        filter: blur(20px);
+    }
+}
+@keyframes myEffects3 {
+    to {
+        transform: translate(-20px, 50px) scale(1.1);
+        filter: blur(15px);
+    }
+}
+p {
+    font-family: var(--sm-font);
+    font-size: 20px;
+    font-weight: light;
+    margin-top: 50px;
+}
+.button {
+    position: absolute;
+    z-index: 1;
+    width: 150px;
+    height: 58px;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--sm-font);
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: var(--white);
+    transition: all 0.3s ease;
+}
+.stroke {
+    border: 2px solid black;
+    width: 150px;
+    height: 58px;
+    position: relative;
+    z-index: 0;
+    right: -9%;
+    bottom: -13px;
+}
+.button:hover {
+    transform: translate(13px, 13px);
+}
+
+/* FADE Effect */
+    /* Header, Paragrapg, Button */
+    #main h1.glass-effect,
+    #main p.glass-effect,
+    .style-btn.glass-effect {
+        filter: blur(10px);
+    }
+    #main h1, 
+    p, 
+    .style-btn {
+        transition: all 0.7s ease;
+    }
+
+/* END MAIN */
+
+
+/* PORTFOLIO */
+#portfolio {
+    margin-top: 230px;
+}
+#portfolio h2 {
+    font-family: var(--lg-font);
+    text-align: center;
+    margin-bottom: 0;
+}
+#portfolio p {
+    text-align: center;
+    margin-top: 30px;
+}
+.filter-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.filter-btn .style-btn:nth-last-of-type(2) {
+    margin: 0 30px;
+}
+.filter-btn .style-btn:nth-of-type(1) .button:hover {
+    background-color: var(--purple);
+}
+.filter-btn .style-btn:nth-of-type(2) .button:hover {
+    background-color: var(--blue);
+}
+.filter-btn .style-btn:nth-of-type(3) .button:hover {
+    background-color: var(--orange);
+}
+
+/* Projects */
+
+.projects1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+.projects1 h6 {
+    font-family: var(--sm-font);
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 8px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.projects1 h2 {
+    margin-top: 10px;
+}
+#portfolio .projects1 p {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.link-btn {
+    display: flex;
+}
+.link-btn .style-btn:first-child {
+    margin-right: 30px;
+}
+
+/* END PORTFOLIO */
+
+
+
+
+
+
+
