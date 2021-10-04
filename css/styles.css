@@ -165,7 +165,7 @@ h1, p {
     height: var(--size-230px);
     border-radius: 50%;
     filter: blur(var(--size-50px));
-    opacity: 0.8;
+    opacity: 1;
 }
 .circle:nth-of-type(1) {
     background-color: var(--blue);
@@ -211,7 +211,7 @@ p {
     font-family: var(--sm-font);
     font-size: var(--size-20px);
     font-weight: light;
-    margin-top: var(--size-50px);
+    margin-top: var(--size-30px);
 }
 .button {
     position: var(--absolute);
@@ -269,7 +269,6 @@ p {
 }
 #portfolio p {
     text-align: var(--center);
-    margin-top: var(--size-30px);
 }
 .filter-btn {
     display: var(--Dflex);
@@ -363,49 +362,18 @@ button {
     box-shadow: 6px 6px var(--size-12px) rgba(0, 0, 0, 0.2);
     border-radius: 50%;
     margin: 10px;
-}/*
-.html:hover {
-    background-color: var(--orange);
 }
-.css:hover {
-    background-color: var(--blue);
-}
-.bootstrap:hover {
-    background-color: var(--purple);
-}
-.javascript:hover {
-    background-color: #fff131;  
-}
-.sass:hover {
-    background-color: #d36cbd;  
-}
-.git:hover {
-    background-color: #e0534f;  
-}
-.figma:hover {
-    background-color: #444444;  
-}
-.adobe-xd:hover {
-    background-color: #4d0046;  
-}
-.photoshop:hover {
-    background-color: #002249;  
-}
-.illustrator:hover {
-    background-color: #411d00;  
-}*/
+
 /* END SKILLS */
 
 /* SOBRE */
     #sobre {
         margin-top: var(--size-230px);
     }
-    #sobre h2 {
-        margin-bottom: var(--size-50px);
-    }
     #sobre p {
         max-width: 800px;
-        margin: var(--size-0) auto;
+        margin-right: auto;
+        margin-left: auto;
         text-align: justify;
     }
     #sobre .link-btn {
@@ -436,69 +404,26 @@ button {
     flex-direction: var(--column);
     align-items: var(--center);
 }
-form {
-    display: var(--Dflex);
-    flex-direction: var(--column);
-    align-items: var(--center);
-    margin-top: var(--size-30px); 
-}
 #contact p {
-    margin: var(--size-30px) var(--size-0);
+    margin: var(--size-30px) var(--size-0) var(--size-0);
     text-align: var(--center);
 }
-#contact form p {
-    font-size: 18px;
-    text-transform: uppercase;
-    margin: var(--size-20px) var(--size-0);
+#contact .img-fluid {
+    width: 200px;
+    transform: translate(12px,13px);
 }
-input {
-    width: 400px;
-    border: none;
-    border-bottom: 2px solid var(--black);
-    border-right: 2px solid var(--black);
-    height: var(--size-30px);
-}
-.submit {
-    width: 150px;
-    height: 58px;
-    font-family: var(--sm-font);
-    background-color: var(--black);
-    color: var(--white);
-    text-transform: uppercase;
-    font-size: var(--size-12px);
-    font-weight: bold;
-    letter-spacing: 3px;
-    transition: var(--all-ease);
-}
-.submit:hover {
-    background-color: var(--white);
-    color: var(--black);
-}
-textarea {
-    resize: none;
-    width: 400px;
-    height: 100px;
-    border: none;
-    margin-bottom: var(--size-50px);
-    color: var(--purple);
-    border-bottom: 2px solid var(--black);
-    border-right: 2px solid var(--black);
- }
+
 /* END CONTACT */
 
 /* FOOTER */
+#footer {
+    padding: 80px var(--size-30px) var(--size-20px);
+}
 #footer .container-fluid {
     display: var(--Dflex);
     justify-content: var(--space-between);
 }
 #footer p {
-    margin: 80px var(--size-30px) var(--size-20px);
     font-size: 16px;
 }
 /* END FOOTER */
-
-
-
-
-
-
