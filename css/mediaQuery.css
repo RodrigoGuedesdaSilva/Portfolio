@@ -1,9 +1,9 @@
 @media (max-width: 992px) {
     .link-btn .style-btn:first-child {
-        margin-right: 20px;
+        margin-right: var(--size-20px);
     }
     #sobre .link-btn .style-btn:nth-child(2) {
-        margin-right: 20px;
+        margin-right: var(--size-20px);
     }
 }
 @media (max-width: 769px) {
@@ -12,8 +12,8 @@
         line-height: 103px;
     }
     .circle{
-        width: 180px;
-        height: 180px;
+        width: 200px;
+        height: 200px;
     }
     .circle:nth-of-type(1) {
         right: -6%;
@@ -23,16 +23,20 @@
     }
     .circle:nth-of-type(3) {
         right: -10%;
-    } 
+    }
     .filter-btn {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: var(--column);
+        align-items: var(--center);
+        margin-top: var(--size-20px);
     }
     .filter-btn .style-btn:nth-of-type(2) {
-        margin: 20px 0 10px 0;
+        margin: var(--size-20px) 0 10px 0;
     }
     .filter-btn .style-btn:nth-of-type(3) {
-        margin: 10px 0 20px 0;
+        margin: 10px 0 var(--size-20px) 0;
+    }
+    .projects {
+        margin-top: 90px;
     }
 }
 
@@ -52,19 +56,26 @@
     }
     p {
         font-size: 18px;
-        margin-top: 40px;
     }
     #sobre .link-btn {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 50px;
+        display: var(--Dflex);
+        flex-direction: var(--column);
+        align-items: var(--center);
+        margin-top: var(--size-50px);
     }
     #sobre .link-btn .style-btn:nth-child(1){
-        margin-left: 20px;
+        margin-left: var(--size-20px);
     }
     #sobre .link-btn .style-btn:nth-child(2){
-        margin: 30px 0;
+        margin: var(--size-30px) 0;
+    }
+    #footer .container-fluid {
+        flex-direction: var(--column);
+        align-items: var(--center);
+    }
+    #footer p {
+        margin-top: 0;
+        font-size: 14px;
     }
 }
 
@@ -79,8 +90,7 @@
     }
     p {
         font-size: 16px;
-        text-align: center;
-        margin-top: 20px;
+        text-align: var(--center);
     }
     .circle{
         width: 130px;
@@ -106,20 +116,7 @@
         width: 140px;
         height: 48px;
     }
-    .button, .stroke{
-        margin-top: 20px;
-    }
     .button:hover {
         transform: translate(12px, 12px);
     }
-    #portfolio p {
-        margin: 20px auto 0;
-        max-width: auto;
-    }
-    input {
-        width: 260px;
-    }
-    textarea {
-        width: 260px;
-     }
 }
