@@ -113,7 +113,7 @@ ul {
     transition: all 0.3s ease;
 }
 #btnmobile {
-    border-top: 2px solid var(--black);
+    border-top: 2.5px solid var(--black);
     width: 30px;
     display: block;
     cursor: pointer;
