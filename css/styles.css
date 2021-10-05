@@ -80,7 +80,7 @@ ul {
     display: none;
     position: var(--absolute);
     z-index: 2;
-    top: 100px;
+    top: 90px;
     display: var(--Dflex);
     flex-direction: var(--column);
     background-color: var(--white);
