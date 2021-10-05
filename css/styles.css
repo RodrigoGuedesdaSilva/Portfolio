@@ -47,14 +47,18 @@ body {
 a {
     text-decoration: none;
     font-family: var(--sm-font);
-    font-weight:bold;
+    font-weight: 700;
     text-transform: uppercase;
     color: var(--black);
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    font-size: var(12px);
 }
 
 h1, p {
     margin: var(--size-0);
+}
+ul {
+    list-style-type: none;
 }
 
 /* NAVBAR */
@@ -66,79 +70,72 @@ h1, p {
     font-family: var(--lg-font);
     font-size: var(--size-30px);
     color: var(--black);
+    font-weight: 300;
+    letter-spacing: -2px;
 }
-.menu, .invisible-board {
-    width: 100%;
-    top: 100%;
-    right: 110%;
-    opacity: var(--size-0);
+.logo:hover {
+    color: var(--black);
+}
+#menu {
+    display: none;
     position: var(--absolute);
+    z-index: 2;
+    top: 100px;
+    display: var(--Dflex);
+    flex-direction: var(--column);
+    background-color: var(--white);
+    width: 100%;
+    right: 100%;
+    padding-left: 0;
+    gap: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
 }
-.invisible-board {
-    height: 500px;
-    background-color: var(--bg-color);
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+#menu.active {
+    display: var(--Dflex);
+    opacity: 1;
+    right: 0;
 }
-.menu {
+.link {
+    color: var(--black);
+    width: 100%;
+    line-height: 120px;
     text-align: var(--center);
-    padding: var(--size-0);
-    line-height: 125px;
 }
 .link:hover {
-    color: var(--white);
-}
-.link, .list {
-    transition: all 0.1s ease;
+    color: var(--black);
+    letter-spacing: 5px;
 }
 .list:hover {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: var(--bg-color);
 }
-
-/* Hamb Menu Style */
-.hamb-menu {
+.link, .list {
+    transition: all 0.3s ease;
+}
+#btnmobile {
+    border-top: 2px solid var(--black);
+    width: 30px;
+    display: block;
     cursor: pointer;
+    transition: all 0.5s ease;
 }
-.line {
-    background-color: var(--black);
+#btnmobile::after, #btnmobile::before {
+    content: '';
+    display: block;
+    width: 30px;
     height: 2px;
+    background-color: var(--black);
+    margin-top: 7px;
+    transition: all 0.5s ease;
 }
-.line:nth-child(1) {
-    width: 10px;
+#btnmobile.active {
+    border-top-color: transparent;
 }
-.line:nth-child(2) {
-    width: var(--size-30px);
-    margin: 9px 0;
+#btnmobile.active::before {
+    transform: rotate(135deg) translateY(-4px);
 }
-.line:nth-child(3) {
-    width: var(--size-20px);
-    margin-left: auto;
-}
-
-/* Hamb Menu ANimation */
-.hamb-menu.active .line:nth-child(1) {
-    transform: rotate(45deg) translate(7.5px, 0px);
-}
-.hamb-menu.active .line:nth-child(2) {
-    transform: rotate(-45deg) translate(0px, 0px);
-}
-.hamb-menu.active .line:nth-child(3) {
-    transform: rotate(45deg) translate(-6px, -5px);
-}
-.hamb-menu.active .line, .line{
-    transition: var(--all-ease);
-}
-.menu.is-active {
-    right: var(--size-0);
-    opacity: 1;
-}
-.invisible-board.activated {
-    right: var(--size-0);
-    opacity: 0.7;
-}
-.menu.is-active, .invisible-board.activated,
-.menu, .invisible-board {
-    transition: var(--all-ease);
-    z-index: 2;
+#btnmobile.active::after {
+    transform: rotate(-135deg) translateY(8px);
 }
 /* END NAVBAR */
 
@@ -410,7 +407,7 @@ button {
 }
 #contact .img-fluid {
     width: 200px;
-    transform: translate(12px,13px);
+    transform: translateY(13px);
 }
 
 /* END CONTACT */
@@ -427,3 +424,9 @@ button {
     font-size: 16px;
 }
 /* END FOOTER */
+
+
+
+
+
+
