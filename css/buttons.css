@@ -1,0 +1,79 @@
+/* Main Button Settings */
+
+.button {
+    position: var(--absolute);
+    z-index: 1;
+    width: 150px;
+    height: 58px;
+    display: var(--Dflex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    font-family: var(--sm-font);
+    font-size: var(--size-12px);
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--black);
+    transition: all 0.3s ease;
+}
+.button:hover {
+    transform: translate(13px, 13px);
+}
+.stroke {
+    border: 2px solid black;
+    width: 149px;
+    height: 58px;
+    position: var(--relative);
+    z-index: var(--size-0);
+    right: -9%;
+    bottom: -13px;
+}
+.btn-flex {
+    display: var(--Dflex);
+    justify-content: var(--center);
+}
+.btn-position:not(#contact .btn-position) {
+    margin-top: var(--size-50px);
+}
+.btn-flex .btn-position {
+    margin: 0 15px 0;
+}
+
+/* About Button Style */
+
+#sobre .btn-flex .btn-position:nth-child(1) .button:hover{
+    background-color: var(--blue);
+}
+#sobre .btn-flex .btn-position:nth-child(2) .button:hover{
+    background-color: var(--orange);
+}
+#sobre .btn-flex .btn-position:nth-child(3) .button:hover{
+    background-color: var(--purple);
+}
+
+/* Portfolio Button Style */
+#portfolio button {
+    border: none;
+    text-transform: uppercase;
+}
+#portfolio .btn-flex .btn-position:nth-of-type(1) .button:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+#portfolio .btn-flex .btn-position:nth-of-type(2) .button:hover {
+    background-color: var(--blue);
+}
+#portfolio .btn-flex .btn-position:nth-of-type(3) .button:hover {
+    background-color: var(--orange);
+}
+#portfolio .btn-flex .btn-position:nth-of-type(4) .button:hover {
+    background-color: var(--purple);
+}
+#portfolio .active-filter-btn {
+    background-color: var(--white);
+    color: var(--black);
+    transform: translate(13px, 13px);
+}
+
+
+

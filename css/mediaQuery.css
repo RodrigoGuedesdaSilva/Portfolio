@@ -1,16 +1,6 @@
-@media (max-width: 992px) {
-    .link-btn .style-btn:first-child {
-        margin-right: var(--size-20px);
-    }
-    #sobre .link-btn .style-btn:nth-child(2) {
-        margin-right: var(--size-20px);
-    }
-}
 @media (max-width: 769px) {
-    #main h1 {
-        font-size: 130px;
-        line-height: 103px;
-    }
+
+    /* Three Circles */
     .circle{
         width: 200px;
         height: 200px;
@@ -24,32 +14,34 @@
     .circle:nth-of-type(3) {
         right: -10%;
     }
-    .filter-btn {
+
+    /* Buttons */
+    .btn-flex {
+        display: var(--Dflex);
         flex-direction: var(--column);
-        align-items: var(--center);
-        margin-top: var(--size-20px);
+        align-items: center;
     }
-    .filter-btn .style-btn:nth-of-type(2) {
-        margin: var(--size-20px) 0 10px 0;
+    .btn-position:not(#contact .btn-position) {
+        margin-top: var(--size-30px);
     }
-    .filter-btn .style-btn:nth-of-type(3) {
-        margin: 10px 0 var(--size-20px) 0;
-    }
+
+    /* Projects Top Margin */
     .projects {
         margin-top: 90px;
     }
 }
 
 @media (max-width: 577px) {
+
+    /* Menu Link Font Size & Menu Size */
     .link {
         font-size: 13px;
     }
-    .invisible-board {
-        height: 455px;
-    }
     .menu {
-        line-height: 115px;
+        line-height: 100px;
     }
+
+    /* Main Title & Paragraph's size */
     #main h1 {
         font-size: 110px;
         line-height: 90px;
@@ -57,19 +49,9 @@
     p {
         font-size: 18px;
     }
-    #sobre .link-btn {
-        display: var(--Dflex);
-        flex-direction: var(--column);
-        align-items: var(--center);
-        margin-top: var(--size-50px);
-    }
-    #sobre .link-btn .style-btn:nth-child(1){
-        margin-left: var(--size-20px);
-    }
-    #sobre .link-btn .style-btn:nth-child(2){
-        margin: var(--size-30px) 0;
-    }
-    #footer .container-fluid {
+
+    /* Footer Column and Font Paragraph size */
+    #footer .container {
         flex-direction: var(--column);
         align-items: var(--center);
     }
@@ -80,6 +62,8 @@
 }
 
 @media (max-width: 450px) {
+
+    /* Logo Size, Main Title and Paragraphs */
     .logo {
         font-size: 25px;
     }
@@ -92,6 +76,8 @@
         font-size: 16px;
         text-align: var(--center);
     }
+
+    /* Three Circles */
     .circle{
         width: 130px;
         height: 130px;
@@ -107,14 +93,14 @@
         top: 21%;
         right: -17%;
     }
-    .button {
+
+    /* Buttons */
+    .button, .stroke {
         width: 140px;
         height: 48px;
-        font-size: 11px;
     }
-    .stroke {
-        width: 140px;
-        height: 48px;
+    .button {
+        font-size: 11px;
     }
     .button:hover {
         transform: translate(12px, 12px);

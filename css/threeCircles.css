@@ -1,0 +1,50 @@
+.circle{
+    /*position: absolute;*/
+    position: fixed;
+    z-index: var(--size-0);
+    width: var(--size-230px);
+    height: var(--size-230px);
+    border-radius: 50%;
+    filter: blur(var(--size-50px));
+    opacity: 1;
+}
+.circle:nth-of-type(1) {
+    background-color: var(--blue);
+    top: 8%;
+    right: 19%;
+    z-index: -2;
+    animation: myEffects1 600ms ease-out 0.1s infinite alternate none;
+}
+.circle:nth-of-type(2) {
+    background-color: var(--purple);
+    top: 20%;
+    right: 26%;
+    z-index: -3;
+    animation: myEffects2 900ms ease-out 0.1s infinite alternate none;
+}
+.circle:nth-of-type(3) {
+    background-color: var(--orange);
+    top: 25%;
+    right: 17%;
+    z-index: -1;
+    animation: myEffects3 800ms ease 0.1s infinite alternate none;
+}
+
+@keyframes myEffects1 {
+    to {
+        transform: scale(1.2);
+        filter: blur(var(--size-20px));
+    }
+}
+@keyframes myEffects2 {
+    to {
+        transform: translate(-40px, 20px) scale(1.1);
+        filter: blur(17px);
+    }
+}
+@keyframes myEffects3 {
+    to {
+        transform: translate(-20px, 50px) scale(1.1);
+        filter: blur(15px);
+    }
+}
