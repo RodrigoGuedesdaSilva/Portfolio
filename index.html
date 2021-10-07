@@ -15,6 +15,15 @@
     <!-- Css Link -->
     <link rel="stylesheet" href="css/styles.css">
 
+    <!-- Buttons Link Sheat -->
+    <link rel="stylesheet" href="css/buttons.css">
+
+    <!-- Three Circles Link Sheat -->
+    <link rel="stylesheet" href="css/threeCircles.css">
+
+    <!-- Nav Menu Link -->
+    <link rel="stylesheet" href="css/nav-menu.css">
+    
     <!-- Media Query Css -->
     <link rel="stylesheet" href="css/mediaQuery.css">
 
@@ -33,16 +42,16 @@
 
                 <ul id="menu">
                     <li class="list">
+                        <a class="link" href="#sobre">
+                            <div class="">Sobre</div>
+                        </a>
+                    <li class="list">
                         <a class="link" href="#portfolio">
                             <div class="">Portfolio</div>
                         </a>
                     <li class="list">
                         <a class="link" href="#skills">
                             <div class="">Habilidades</div>
-                        </a>
-                    <li class="list">
-                        <a class="link" href="#sobre">
-                            <div class="">Sobre</div>
                         </a>
                     <li class="list">
                         <a class="link" href="#contact">
@@ -57,8 +66,9 @@
             <!-- MAIN SECTION -->
             <main id="main">
                 <h1>Rodrigo<br> Silva</h1>
-                <p>Web Designer e Desenvolvedor Frontend</p></p>
-                <a class="style-btn" href="#portfolio">
+                <p>Desenvolvevor Frontend e Web Designer</p>
+                
+                <a class="btn-position" href="#portfolio">
                     <div class="button">Portfolio</div>
                     <div class="stroke"></div>
                 </a>
@@ -74,25 +84,75 @@
     </header>
     <!-- END HEADER -->
 
+    <!-- SOBRE -->
+    <section id="sobre">
+        <div class="container">
+            <h2>Sobre</h2>
+            <p>
+                Oi! Sou Rodrigo Silva. Tenho 27 anos. 
+                Atualmente moro em Fortaleza, Ceará 
+                desde 2014 e sou natural de Manaus, Amazonas.
+                Estou me dedicando integralmente ao Web Design
+                e desenvolvimento Frontend desde Junho de 2021, 
+                e econtrei nisso minha verdadeira vocação. 
+                Em menos de 6 meses adiquiri várias habilidades 
+                de Web Design e Desenvolvimento Frontend. 
+                Ainda tenho muito a aprender, mas a cada dia venho me 
+                aperfeçoando aos poucos. Sou muito disciplinado, 
+                proativo e estou sempre buscando aprender algo novo e desafiador. 
+            </p>
+            <p>O plano para 2021 era me tornar um designer gráfico, 
+                e durante os estudos, eu ouvia muito sobre Web Design 
+                e UX/UI Design. Foi quando começou meu interesse
+                em conhecer mais sobre esse mundo. E ainda durante 
+                meus estudos de Web Design, eu ouvi falar sobre
+                Desenvolvimento Frontend. Não acreditei que eu
+                poderia dar vida aos meus designs! E assim, comecei
+                minha tragetória nessas duas áreas.
+            </p>
+            <p>
+                No momento em que você está lendo este parágrafo,
+                estou aprendendo a consumir uma API, a usar o NPM e 
+                me aprofundando mais no Javascript e Sass. Ano que vem, pretendo
+                estudar React, Vue.js, PHP e SQL/MySQL.
+            </p>
+            <div class="btn-flex">
+                <a class="btn-position" href="https://linkedin.com/in/rodrigosilva-dev-frontend" target="_blank">
+                    <div class="button">Linked In</div>
+                    <div class="stroke"></div>
+                </a>
+                <a class="btn-position" href="https://github.com/RodrigoGuedesdaSilva" target="_blank">
+                    <div class="button">Github</div>
+                    <div class="stroke"></div>
+                </a>
+                <a class="btn-position" href="https://br.pinterest.com/rodrigoguedesdasilvaoficial/my-designs/" target="_blank">
+                    <div class="button">Pinterest</div>
+                    <div class="stroke"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- END SOBRE -->
+
     <!-- PORTFOLIO -->
     <section id="portfolio">
         <div class="container">
             <h2>Portfolio</h2>
             <p>Clique nos botões abaixo para visualizar meus projetos mais recentes.</p>
-            <div class="filter-btn filter-button-group">
-                <div class="style-btn">
+            <div class="btn-flex filter-button-group">
+                <div class="btn-position">
                     <button data-filter="*" type="button" class="button active-filter-btn">Todos</button>
                     <div class="stroke"></div>
                 </div>
-                <div class="style-btn">
+                <div class="btn-position">
                     <button data-filter=".landing-page" type="button" class="button">Landing Page</button>
                     <div class="stroke"></div>
                 </div>
-                <div class="style-btn">
+                <div class="btn-position">
                     <button data-filter=".ecommerce" type="button" class="button">Ecommerce</button>
                     <div class="stroke"></div>
                 </div>
-                <div class="style-btn">
+                <div class="btn-position">
                     <button data-filter=".design" type="button" class="button">Web Design</button>
                     <div class="stroke"></div>
                 </div>
@@ -106,12 +166,12 @@
                     <h6>LANDING PAGE</h6>
                     <h2>Chat App | Homepage</h2>
                     <p>Este é o design e a construção de uma homepage para um projeto conceitual - um aplicativo de bate-papo. Fiz o design da página primeiro no Figma e em seguida criei o site responsivo.</p>
-                    <div class="link-btn">
-                        <a class="style-btn" href="https://rodrigoguedesdasilva.github.io/chatapp_project/" target="_blank">
+                    <div class="btn-flex">
+                        <a class="btn-position" href="https://rodrigoguedesdasilva.github.io/chatapp_project/" target="_blank">
                             <div class="button">Ver Site</div>
                             <div class="stroke"></div>
                         </a>
-                        <a class="style-btn" href="https://www.figma.com/file/9vhgT4OOtXo663kLnP4edG/Chat-App-Homepage-Design?node-id=107%3A2" target="_blank">
+                        <a class="btn-position" href="https://www.figma.com/file/9vhgT4OOtXo663kLnP4edG/Chat-App-Homepage-Design?node-id=107%3A2" target="_blank">
                             <div class="button">Figma</div>
                             <div class="stroke"></div>
                         </a>
@@ -122,13 +182,13 @@
                     <img class="img-fluid" src="img/destiny.png" alt="">
                     <h6>LANDING PAGE</h6>
                     <h2>Destiny | Homepage</h2>
-                    <p>Este é o design e a construção de uma homepage para um projeto conceitual - um aplicativo de bate-papo. Fiz o design da página primeiro no Figma e em seguida criei o site responsivo.</p>
-                    <div class="link-btn">
-                        <a class="style-btn" href="https://rodrigoguedesdasilva.github.io/destiny-project/" target="_blank">
+                    <p>O projeto Destiny é uma plataforma para criação de sites responsivos. Essa landing page conceitual foi criado inteiramente em Bootstrap. Fiz o design da página primeiro no Figma.</p>
+                    <div class="btn-flex">
+                        <a class="btn-position" href="https://rodrigoguedesdasilva.github.io/destiny-project/" target="_blank">
                             <div class="button">Ver Site</div>
                             <div class="stroke"></div>
                         </a>
-                        <a class="style-btn" href="https://www.figma.com/file/Edhc4gNVFfV6Piea80QrqL/Destiny-App-Homepage-Website?node-id=0%3A1" target="_blank">
+                        <a class="btn-position" href="https://www.figma.com/file/Edhc4gNVFfV6Piea80QrqL/Destiny-App-Homepage-Website?node-id=0%3A1" target="_blank">
                             <div class="button">Figma</div>
                             <div class="stroke"></div>
                         </a>
@@ -139,14 +199,14 @@
                     <img class="img-fluid" src="img/team-app.png" alt="">
                     <h6>LANDING PAGE</h6>
                     <h2>Team App | Homepage</h2>
-                    <p>Este é o design e a construção de uma homepage para um projeto conceitual - um aplicativo de bate-papo. Fiz o design da página primeiro no Figma e em seguida criei o site responsivo.</p>
-                    <div class="link-btn">
-                        <a class="style-btn" href="https://rodrigoguedesdasilva.github.io/team-app-Website/" target="_blank">
+                    <p>Projeto e construção de site completo para uma plataforma de colaboração de equipe. Criado com Html, Css, Bootstrap e um pouco de Javascript. Disponibilizo o design feito no Figma.</p>
+                    <div class="btn-flex">
+                        <a class="btn-position" href="https://rodrigoguedesdasilva.github.io/team-app-Website/" target="_blank">
                             <div class="button">Ver Site</div>
                             <div class="stroke"></div>
                         </a>
-                        <a class="style-btn" href="https://www.figma.com/file/qcxWIJLaHTWp3TsC38qMgL/Team-App-Designs?node-id=0%3A1" target="_blank">
-                            <div class="button">Ver Site</div>
+                        <a class="btn-position" href="https://www.figma.com/file/qcxWIJLaHTWp3TsC38qMgL/Team-App-Designs?node-id=0%3A1" target="_blank">
+                            <div class="button">Figma</div>
                             <div class="stroke"></div>
                         </a>
                     </div>
@@ -155,79 +215,45 @@
                 <div class="projects col-lg-6 col-md-6 col-sm-12 design">
                     <img class="img-fluid" src="img/travel-agency-Header.png" alt="">
                     <h6>WEB DESIGN</h6>
-                    <h2>Travel Agency Header Design</h2>
-                    <p>Este é o design e a construção de uma homepage para um projeto conceitual - um aplicativo de bate-papo. Fiz o design da página primeiro no Figma e em seguida criei o site responsivo.</p>
-                    <div class="link-btn">
-                        <a class="style-btn" href="https://www.figma.com/file/PL32gHkAim34AVH8lJrG38/Adventure-Agency-Header-Web-Design" target="_blank">
+                    <h2>Travel Agency Design</h2>
+                    <p>Projeto moderno e conceitual para uma Agência de Viagens. Fiz o design do Header utilizando as melhores e mais modernas práticas do Web Design.  </p>
+                        <a class="btn-position" href="https://www.figma.com/file/PL32gHkAim34AVH8lJrG38/Adventure-Agency-Header-Web-Design" target="_blank">
                             <div class="button">Figma</div>
                             <div class="stroke"></div>
                         </a>
-                    </div>
-                </div>
-
-                <div class="projects col-lg-6 col-md-6 col-sm-12 design">
-                    <img class="img-fluid" src="img/health-website-Header.png" alt="">
-                    <h6>WEB DESIGN</h6>
-                    <h2>Health Website Header Design</h2>
-                    <p>Este é o design e a construção de uma homepage para um projeto conceitual - um aplicativo de bate-papo. Fiz o design da página primeiro no Figma e em seguida criei o site responsivo.</p>
-                    <div class="link-btn">
-                        <a class="style-btn" href="https://www.figma.com/file/y1hgyM5iWwpzyLHUNgMvi5/Wealth-Website-Header-Design" target="_blank">
-                            <div class="button">Figma</div>
-                            <div class="stroke"></div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="projects col-lg-6 col-md-6 col-sm-12 design">
-                    <img class="img-fluid" src="img/parenting-Header.png" alt="">
-                    <h6>WEB DESIGN</h6>
-                    <h2>Parenting Header Design</h2>
-                    <p>Este é o design e a construção de uma homepage para um projeto conceitual - um aplicativo de bate-papo. Fiz o design da página primeiro no Figma e em seguida criei o site responsivo.</p>
-                    <div class="link-btn">
-                        <a class="style-btn" href="https://www.figma.com/file/xc53arKzfhAG3tF6NSWc5c/Parenting-Website-Header-Design" target="_blank">
-                            <div class="button">Figma</div>
-                            <div class="stroke"></div>
-                        </a>
-                    </div>
                 </div>
 
                 <div class="projects col-lg-6 col-md-6 col-sm-12 ecommerce">
                     <img class="img-fluid" src="img/megamenu.png" alt="">
                     <h6>ECOMMERCE</h6>
                     <h2>Mega Menu</h2>
-                    <p>Este é o design e a construção de uma homepage para um projeto conceitual - um aplicativo de bate-papo. Fiz o design da página primeiro no Figma e em seguida criei o site responsivo.</p>
-                    <div class="link-btn">
-                        <a class="style-btn" href="https://rodrigoguedesdasilva.github.io/Mega-Menu/" target="_blank">
+                    <p>Projeto de um Mega Menu Moderno para ecommerce. Menu dinâmico e responsivo para todos os dispositivos. </p>
+                        <a class="btn-position" href="https://rodrigoguedesdasilva.github.io/Mega-Menu/" target="_blank">
                             <div class="button">Ver Site</div>
                             <div class="stroke"></div>
                         </a>
-                    </div>
                 </div>
 
                 <div class="projects col-lg-6 col-md-6 col-sm-12 ecommerce">
                     <img class="img-fluid" src="img/product-detail-page.png" alt="">
                     <h6>ECOMMERCE</h6>
                     <h2>Product Detail Page</h2>
-                    <p>Este é o design e a construção de uma homepage para um projeto conceitual - um aplicativo de bate-papo. Fiz o design da página primeiro no Figma e em seguida criei o site responsivo.</p>
-                    <div class="link-btn">
-                        <a class="style-btn" href="https://rodrigoguedesdasilva.github.io/Product-Detail-Page/" target="_blank">
+                    <p>Página de Detalhes de Produto responsivo. Utilizando Html, Css e Javascript.</p>
+                        <a class="btn-position" href="https://rodrigoguedesdasilva.github.io/Product-Detail-Page/" target="_blank">
                             <div class="button">Ver Site</div>
                             <div class="stroke"></div>
                         </a>
-                    </div>
                 </div>
 
                 <div class="projects col-lg-6 col-md-6 col-sm-12 ecommerce">
                     <img class="img-fluid" src="img/blgoshop.png" alt="">
                     <h6>ECOMMERCE</h6>
                     <h2>Blogshop Website</h2>
-                    <p>Este é o design e a construção de uma homepage para um projeto conceitual - um aplicativo de bate-papo. Fiz o design da página primeiro no Figma e em seguida criei o site responsivo.</p>
-                    <div class="link-btn">
-                        <a class="style-btn" href="https://rodrigoguedesdasilva.github.io/Blogshop-Ecommerce/" target="_blank">
+                    <p>Design conceitual para o Projeto Blogshop. Consiste de 4 páginas. Página principal, Página de produtos, Página de Detalhes do Produto e Página de Cart.</p>
+                        <a class="btn-position" href="https://rodrigoguedesdasilva.github.io/Blogshop-Ecommerce/" target="_blank">
                             <div class="button">Ver Site</div>
                             <div class="stroke"></div>
                         </a>
-                    </div>
                 </div>
 
             </div>
@@ -240,7 +266,7 @@
         <div class="container">
             <h2>Habilidades</h2>
             <div class="row">
-                <div class="box col-lg-4">
+                <div class="box col-lg-12">
                     <p>Html</p>
                 </div>
                 <div class="box col-lg-4">
@@ -259,6 +285,12 @@
                     <p>Git</p>
                 </div>
                 <div class="box col-lg-4">
+                    <p>Wordpress</p>
+                </div>
+                <div class="box col-lg-4">
+                    <p>Webflow</p>
+                </div> 
+                <div class="box col-lg-4">
                     <p>Figma</p>
                 </div>
                 <div class="box col-lg-4">
@@ -271,47 +303,15 @@
                     <p>Illustrator</p>
                 </div>
                 <div class="box col-lg-4">
-                    <p>Wordpress</p>
+                    <p>Design<br>Gráfico</p>
                 </div>
                 <div class="box col-lg-4">
-                    <p>Webflow</p>
-                </div> 
+                    <p>UX/UI Design</p>
+                </div>
             </div>
         </div>
     </section>
     <!-- END HABILIDADES -->
-
-    <!-- SOBRE -->
-    <section id="sobre">
-        <div class="container">
-            <h2>Sobre</h2>
-            <p>
-                Oi! Sou Rodrigo. Tenhos 27 anos. 
-                Atualmente moro em Fortaleza, Ceará 
-                desde 2014 e sou natural de Manaus, Amazonas.
-                Estou me dedicando integralmente ao Web Design
-                e desenvolvimento Frontend desde Junho de 2021, 
-                e econtrei nisso minha verdadeira vocação. Sou muito 
-                disciplinado, proativo e gosto muito de aprender 
-                algo novo e desafiador.
-            </p>
-            <div class="link-btn">
-                <a class="style-btn" href="https://linkedin.com/in/rodrigosilva-dev-frontend" target="_blank">
-                    <div class="button">Linked In</div>
-                    <div class="stroke"></div>
-                </a>
-                <a class="style-btn" href="https://github.com/RodrigoGuedesdaSilva" target="_blank">
-                    <div class="button">Github</div>
-                    <div class="stroke"></div>
-                </a>
-                <a class="style-btn" href="https://br.pinterest.com/rodrigoguedesdasilvaoficial/my-designs/" target="_blank">
-                    <div class="button">Pinterest</div>
-                    <div class="stroke"></div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <!-- END SOBRE -->
 
     <!-- CONTACT -->
     <section id="contact">
@@ -319,7 +319,7 @@
             <h2>Contato</h2>
             <p>Vamos Conversar? Clique no Botão abaixo!</p>
             <img class="img-fluid" src="img/img-khaby.png" alt="">
-            <a class="style-btn" href="https://api.whatsapp.com/send?phone=5585988310221" target="_blank">
+            <a class="btn-position" href="https://api.whatsapp.com/send?phone=5585988310221" target="_blank">
                 <div class="button">Clique Aqui</div>
                 <div class="stroke"></div>
             </a>
@@ -329,7 +329,7 @@
 
     <!-- FOOTER -->
     <footer id="footer">
-        <div class="container-fluid">
+        <div class="container">
             <p>Created By Rodrigo Silva</p>
             <p>© Todos os Direitos Reservados</p>
         </div>
