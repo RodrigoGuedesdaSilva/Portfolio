@@ -118,14 +118,16 @@ ul {
 
 /* PORTFOLIO */
 /* Projects */
-.projects {
+.project {
+    /*margin-top: 150px;*/
     display: var(--Dflex);
     flex-direction: var(--column);
     align-items: var(--center);
-    margin-top: 150px;
-    position: relative;
 }
-.projects h6 {
+.project img {
+    box-shadow: 8px 14px 10px rgba(0, 0, 0, 0.2);
+}
+.project h6 {
     font-family: var(--sm-font);
     font-weight: bold;
     font-size: var(--size-12px);
@@ -133,14 +135,13 @@ ul {
     margin-top: var(--size-20px);
     margin-bottom: var(--size-0);
 }
-.projects h2 {
+.project h2 {
     margin-top: 10px;
 }
-#portfolio .projects p {
+#portfolio .project p {
     text-align: var(--center);
     margin-top: var(--size-20px);
 }
-
 /* END PORTFOLIO */
 
 /* SKILLS */

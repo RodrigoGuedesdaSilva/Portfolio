@@ -32,11 +32,8 @@
     .filter-button-group .btn-position:nth-child(4) .stroke {
         display: none;
     }
-    .projects:nth-child(4) {
+    .project:nth-child(4) {
         display: none;
-    }
-    .projects {
-        margin-top: 90px;
     }
     .figma-btn {
         display: none;
