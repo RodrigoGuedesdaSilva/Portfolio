@@ -29,6 +29,12 @@
     .projects {
         margin-top: 90px;
     }
+    .figma-btn {
+        display: none;
+    }
+    .projects:nth-child(4) {
+        display: none;
+    }
 }
 
 @media (max-width: 577px) {
