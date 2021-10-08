@@ -1,4 +1,3 @@
-
 // init Isotope
 var $grid = $('.project-list').isotope({
   // options
