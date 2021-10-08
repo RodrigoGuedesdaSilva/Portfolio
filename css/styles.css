@@ -123,6 +123,7 @@ ul {
     flex-direction: var(--column);
     align-items: var(--center);
     margin-top: 150px;
+    position: relative;
 }
 .projects h6 {
     font-family: var(--sm-font);
