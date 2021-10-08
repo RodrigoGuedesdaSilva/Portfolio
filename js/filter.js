@@ -1,6 +1,6 @@
 
 // init Isotope
-var $grid = $('#portfolio .container .row').isotope({
+var $grid = $('.project-list').isotope({
   // options
 });
 // filter items on button click
