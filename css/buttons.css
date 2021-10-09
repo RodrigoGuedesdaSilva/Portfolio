@@ -29,6 +29,7 @@
     bottom: -13px;
 }
 .btn-flex {
+    position: var(--relative);
     display: var(--Dflex);
     justify-content: var(--center);
 }
