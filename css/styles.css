@@ -124,6 +124,7 @@ ul {
     align-items: var(--center);
 }
 .project img {
+    width: 450px;
     box-shadow: 8px 14px 10px rgba(0, 0, 0, 0.2);
 }
 .project h6 {
