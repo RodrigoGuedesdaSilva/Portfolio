@@ -32,6 +32,7 @@
     --size-20px: 20px; 
     --size-30px: 30px;
     --size-50px: 50px;
+    --size-80px: 80px;
     --size-230px: 230px;
 
     /* Transition */
@@ -122,6 +123,7 @@ ul {
     display: var(--Dflex);
     flex-direction: var(--column);
     align-items: var(--center);
+    margin-top: var(--size-80px)
 }
 .project img {
     width: 450px;
@@ -133,14 +135,12 @@ ul {
     font-size: var(--size-12px);
     letter-spacing: 8px;
     margin-top: var(--size-20px);
-    margin-bottom: var(--size-0);
-}
-.project h2 {
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 #portfolio .project p {
     text-align: var(--center);
     margin-top: var(--size-20px);
+    max-width: 520px;
 }
 /* END PORTFOLIO */
 
@@ -151,7 +151,7 @@ ul {
 #skills .row {
     display: var(--Dflex);
     justify-content: var(--center);
-    margin-top: var(--size-50px);
+    margin-top: var(--size-80px)
 }
 .box {
     width: 150px;

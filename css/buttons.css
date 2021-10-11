@@ -34,7 +34,7 @@
     justify-content: var(--center);
 }
 .btn-position:not(#contact .btn-position) {
-    margin-top: var(--size-50px);
+    margin-top: 60px;
 }
 .btn-flex .btn-position {
     margin: 0 15px 0;
@@ -49,25 +49,6 @@
     background-color: var(--orange);
 }
 #sobre .btn-flex .btn-position:nth-child(3) .button:hover{
-    background-color: var(--purple);
-}
-
-/* Portfolio Button Style */
-#portfolio button {
-    border: none;
-    text-transform: uppercase;
-}
-#portfolio .btn-flex .btn-position:nth-of-type(1) .button:hover {
-    background-color: var(--white);
-    color: var(--black);
-}
-#portfolio .btn-flex .btn-position:nth-of-type(2) .button:hover {
-    background-color: var(--blue);
-}
-#portfolio .btn-flex .btn-position:nth-of-type(3) .button:hover {
-    background-color: var(--orange);
-}
-#portfolio .btn-flex .btn-position:nth-of-type(4) .button:hover {
     background-color: var(--purple);
 }
 
