@@ -24,7 +24,6 @@
     .btn-position:not(#contact .btn-position) {
         margin-top: var(--size-30px);
     }
-
 }
 
 @media (max-width: 577px) {

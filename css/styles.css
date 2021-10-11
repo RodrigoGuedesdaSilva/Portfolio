@@ -123,11 +123,10 @@ ul {
     display: var(--Dflex);
     flex-direction: var(--column);
     align-items: var(--center);
-    margin-top: var(--size-80px)
+    margin-top: var(--size-80px);
 }
 .project img {
-    width: 450px;
-    box-shadow: 8px 14px 10px rgba(0, 0, 0, 0.2);
+    padding: 0 15px 0;
 }
 .project h6 {
     font-family: var(--sm-font);
